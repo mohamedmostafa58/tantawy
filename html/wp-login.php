@@ -2,44 +2,79 @@
 <html lang="en-US">
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Lost Password ‹ tantawy — WordPress</title>
-	<meta name="robots" content="max-image-preview:large, noindex, noarchive">
+	<title>Log In ‹ github — WordPress</title>
+	<meta name="robots" content="noindex, nofollow, noarchive">
 <link rel="stylesheet" href="../css/load-styles.php" media="all">
 	<meta name="referrer" content="strict-origin-when-cross-origin">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		</head>
-	<body class="login no-js login-action-lostpassword wp-core-ui  locale-en-us">
+	<body class="login no-js login-action-login wp-core-ui  locale-en-us">
 	<script>
 document.body.className = document.body.className.replace('no-js','js');
 </script>
 
-				<h1 class="screen-reader-text">Lost Password</h1>
+				<h1 class="screen-reader-text">Log In</h1>
 			<div id="login">
 		<h1 role="presentation" class="wp-login-logo"><a href="https://wordpress.org/">Powered by WordPress</a></h1>
-	<div class="notice notice-info message"><p>Please enter your username or email address. You will receive an email message with instructions on how to reset your password.</p></div>
-
-		<form name="lostpasswordform" id="lostpasswordform" action="../html/wp-login.php" method="post">
+	
+		<form name="loginform" id="loginform" action="../html/wp-login.php" method="post">
 			<p>
 				<label for="user_login">Username or Email Address</label>
-				<input type="text" name="user_login" id="user_login" class="input" value="" size="20" autocapitalize="off" autocomplete="username" required="required">
+				<input type="text" name="log" id="user_login" class="input" value="" size="20" autocapitalize="off" autocomplete="username" required="required">
 			</p>
-						<input type="hidden" name="redirect_to" value="">
+
+			<div class="user-pass-wrap">
+				<label for="user_pass">Password</label>
+				<div class="wp-pwd">
+					<input type="password" name="pwd" id="user_pass" class="input password-input" value="" size="20" autocomplete="current-password" spellcheck="false" required="required">
+					<button type="button" class="button button-secondary wp-hide-pw hide-if-no-js" data-toggle="0" aria-label="Show password">
+						<span class="dashicons dashicons-visibility" aria-hidden="true"></span>
+					</button>
+				</div>
+			</div>
+						<p class="forgetmenot"><input name="rememberme" type="checkbox" id="rememberme" value="forever"> <label for="rememberme">Remember Me</label></p>
 			<p class="submit">
-				<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Get New Password">
+				<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Log In">
+									<input type="hidden" name="redirect_to" value="http://176.126.78.159:8080/wp-admin/">
+									<input type="hidden" name="testcookie" value="1">
 			</p>
 		</form>
 
-		<p id="nav">
-			<a class="wp-login-log-in" href="../html/wp-login.php">Log in</a>
-					</p>
-				<p id="backtoblog">
-			<a href="../html/mohamed.html">← Go to tantawy</a>		</p>
+					<p id="nav">
+				<a class="wp-login-lost-password" href="../html/wp-login.php">Lost your password?</a>			</p>
+			<script>
+function wp_attempt_focus() {setTimeout( function() {try {d = document.getElementById( "user_login" );d.focus(); d.select();} catch( er ) {}}, 200);}
+wp_attempt_focus();
+if ( typeof wpOnload === 'function' ) { wpOnload() }
+</script>
+		<p id="backtoblog">
+			<a href="../index.html">← Go to github</a>		</p>
 			</div>
 		
-	<script>
-		try{document.getElementById('user_login').focus();}catch(e){}
-		if(typeof wpOnload==='function')wpOnload();
-		
+	
+<script>
+/* <![CDATA[ */
+var _zxcvbnSettings = {"src":"http:\/\/176.126.78.159:8080\/wp-includes\/js\/zxcvbn.min.js"};/* ]]> */
 </script>
+<script src="../js/load-scripts.php"></script>
+<script src="../js/i18n.min_.js" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="password-strength-meter-js-extra">
+var pwsL10n = {"unknown":"Password strength unknown","short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
+</script>
+<script src="../js/password-strength-meter.min_.js" id="password-strength-meter-js"></script>
+<script src="../js/underscore.min_.js" id="underscore-js"></script>
+<script id="wp-util-js-extra">
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+</script>
+<script src="../js/wp-util.min_.js" id="wp-util-js"></script>
+<script src="../js/dom-ready.min_.js" id="wp-dom-ready-js"></script>
+<script src="../js/a11y.min_.js" id="wp-a11y-js"></script>
+<script id="user-profile-js-extra">
+var userProfileL10n = {"user_id":"0","nonce":"5b48c3ca6e"};
+</script>
+<script src="../js/user-profile.min_.js" id="user-profile-js"></script>
 	</body>
 	</html>
